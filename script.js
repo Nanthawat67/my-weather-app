@@ -1,10 +1,9 @@
-const apiKey = 'b24be52ac44a24de4463d99e7ec632bb'; // 🔐 เปลี่ยนเป็นของคุณถ้ามี
+const apiKey = 'b24be52ac44a24de4463d99e7ec632bb'; 
 
 const searchForm = document.querySelector('#search-form');
 const cityInput = document.querySelector('#city-input');
 const weatherInfoContainer = document.querySelector('#weather-info-container');
 
-// แปลงชื่อเมืองไทยเป็นอังกฤษ (ใช้กับ API)
 const cityMap = {
     "กรุงเทพ": "Bangkok",
     "เชียงใหม่": "Chiang Mai",
@@ -26,7 +25,6 @@ searchForm.addEventListener('submit', (event) => {
         return;
     }
 
-    // ถ้ามีใน cityMap ให้ใช้ชื่ออังกฤษแทน
     if (cityMap[cityName]) {
         cityName = cityMap[cityName];
     }
