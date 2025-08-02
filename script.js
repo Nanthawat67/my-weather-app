@@ -1,5 +1,4 @@
 const apiKey = 'b24be52ac44a24de4463d99e7ec632bb'; 
-
 const searchForm = document.querySelector('#search-form');
 const cityInput = document.querySelector('#city-input');
 const weatherInfoContainer = document.querySelector('#weather-info-container');
